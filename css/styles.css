@@ -667,7 +667,6 @@ img {
   transform: translate(-50%, -50%) scale(1.1);
 }
 .modal {
-  position: relative;
   min-height: 581px;
   min-width: 528px;
   background-color: var(--white-color);
@@ -696,4 +695,12 @@ img {
 }
 .icon-close {
   fill: var(--black-color);
+}
+.form-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--secondary-text-color);
+  margin-top: 40px;
 }
