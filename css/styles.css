@@ -695,6 +695,10 @@ img {
 }
 .icon-close {
   fill: var(--black-color);
+  fill: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-close:hover {
+  fill: var(--accent-color);
 }
 .form-title {
   display: block;
@@ -721,6 +725,7 @@ img {
   border-radius: 4px;
   height: 40px;
   width: 100%;
+  padding-left: 42px;
 }
 .form-image {
   position: absolute;
@@ -739,6 +744,86 @@ img {
   font-weight: 400;
   font-size: 14px;
   outline: none;
+  padding: 16px 12px;
 
   color: rgba(117, 117, 117, 0.5);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form-list:focus-within > .form-image {
+  fill: var(--accent-color);
+}
+
+.form-list:focus-within > .form-input,
+.form-list:focus-within > .form-textarea {
+  border-color: var(--accent-color);
+}
+.form-textarea,
+.form-input {
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-mailing {
+  margin-top: 20px;
+}
+.mailing-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.checbox {
+  position: absolute;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.checkbox-icon {
+  display: inline-block;
+  margin-right: 8px;
+  width: 15px;
+  height: 15px;
+  border: 2px solid var(--secondary-text-color);
+  border-radius: 4px;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checbox:checked + .checkbox-icon {
+  background-color: var(--accent-color);
+  background-image: url(../images/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: var(--accent-color);
+}
+.text-confirm {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--primary-text-color);
+}
+.mailing-link {
+  color: var(--accent-color);
+  text-decoration-line: underline;
+}
+
+.button-send {
+  margin-top: 30px;
+  margin-left: 173px;
+  width: 200px;
+  height: 50px;
+
+  font-size: 16px;
+  line-height: 1.87;
+  font-weight: 700;
+
+  color: var(--white-color);
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+.button-send:hover,
+.button-send:focus {
+  background: #188ce8;
 }
