@@ -414,7 +414,7 @@
                     </label>
                     <button type="submit" class="submit">Подписаться
                         <svg class="submit-svg">
-                            <use href="./images/sprite.svg#icon-send"></use>
+                            <use href="./images/symbol-defs2.svg#icon-icon-send"></use>
                         </svg>
                     </button>
                 </form>
@@ -431,47 +431,42 @@
         </button>
         <form action="form" class="form" id="global-form">
             <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+            <div class="form-list name">
+                <label for="name" class="form-label">Имя</label>
+                <input type="text" class="form-column form-input" placeholder=" " id="name">
+               
+                    <svg class="form-image name" width="18px" height="18px">
+                        <use href="./images/symbol-defs2.svg#icon-person-black"></use>
+                    </svg> 
+            </div>
+        
             <div class="form-list">
-                <label class="form-list__item-label">
-                    <svg class="form-list__item-image">
-                        <use href="./images/sprite.svg#icon-person"></use>
+                <label for="telephone" class="form-label">Телефон</label>
+                <input type="tel" name="telephone" class="form-column form-input" placeholder=" " id="telephone">
+                
+                    <svg class="form-image telephone" width="18px" height="18px">
+                        <use href="./images/symbol-defs2.svg#icon-phone-black"></use>
                     </svg>
-                    <input type="text" class="form-list__item-colomn" placeholder=" ">
-        
-                    <span class="form-list__item-text">Имя</span>
-        
-                </label>
             </div>
-        
-            <div class="form-list__item">
-                <label class="form-list__item-label">
-                    <svg class="form-list__item-image telephone">
-                        <use href="./images/sprite.svg#icon-telephone"></use>
+
+            <div class="form-list">
+                <label for="email" class="form-label">Почта</label>
+                <input type="email" name="email" class="form-column form-input" placeholder=" " id="email">
+                
+                    <svg class="form-image envelope" width="18px" height="18px">
+                        <use href="./images/symbol-defs2.svg#icon-email-black"></use>
                     </svg>
-                    <input type="tel" name="telephone" class="form-list__item-colomn" placeholder=" ">
-        
-                    <span class="form-list__item-text">Телефон</span>
-                </label>
             </div>
-            <div class="form-list__item">
-                <label class="form-list__item-label">
-                    <svg class="form-list__item-image envelope">
-                        <use href="./images/sprite.svg#icon-e-mail"></use>
-                    </svg>
-                    <input type="email" name="email" class="form-list__item-colomn" placeholder=" ">
-        
-                    <span class="form-list__item-text">Почта</span>
-                </label>
-            </div>
-            <div class="form-list__item">
-                <div class="form-list__item-label">
-                    <textarea name="comment" rows="5" placeholder=" " class="form-list__item-colomn comments"></textarea>
-                    <label for="comment" class="comments-text">Комментарий</label>
-                </div>
+            
+            <div class="form-list">
+                    <label for="comment" class="textarea-text">Комментарий</label>
+                    <textarea name="comment" rows="5" placeholder="Введите текст " class="form-column form-textarea"></textarea>
+                    
+                
             </div>
         
             <div class="form-mailing">
-                <label class="form-mailing__label">
+                <label class="form-mailing-label">
                     <input type="checkbox" class="checbox">
                     <span class="checkbox-icon"></span>
                     <p class="form-mailing__label-confirm">Соглашаюсь с рассылкой и принимаю
